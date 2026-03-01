@@ -4,7 +4,10 @@
     {
         try
         {
-            Console.WriteLine(args[0]);
+            foreach (var arg in args)
+            {
+                Console.Write($"{arg} ");
+            }
         }
         catch { }
     }
