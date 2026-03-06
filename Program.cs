@@ -2,13 +2,12 @@
 {
     private static void Main(string[] args)
     {
-        try
+        if (args[0] == "out")
         {
-            foreach (var arg in args)
+            for (long a = 1; a < args.Length; a++)
             {
-                Console.Write($"{arg} ");
+                Console.Write($"{args[a]} ");
             }
         }
-        catch { }
     }
 }
